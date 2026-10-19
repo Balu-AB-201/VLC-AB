@@ -3,6 +3,9 @@
 
     <style name="Theme.VLC" parent="Theme.VLC.7" />
 
+    <!-- Base overlay used by the glass theme selector; glass variants extend this style. -->
+    <style name="ThemeOverlay.VLC" parent="ThemeOverlay.MaterialComponents" />
+
     <style name="Theme.VLC.7" parent="Theme.VLC.Apearance">
         <!--        <item name="actionBarStyle">@style/ActionBar</item>-->
         <item name="android:textViewStyle">@style/VLC.TextView</item>
