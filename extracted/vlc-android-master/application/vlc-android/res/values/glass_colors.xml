@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glass / Liquid glass theme colors (light). Night variants live in values-night/glass_colors.xml -->
+<resources>
+    <!-- Window gradient: glass -->
+    <color name="glass_grad_start">#FFB9D4FF</color>
+    <color name="glass_grad_mid">#FFD9C8FF</color>
+    <color name="glass_grad_end">#FFFFC9A6</color>
+    <!-- Window gradient: liquid glass -->
+    <color name="liquid_grad_start">#FFA8CBFF</color>
+    <color name="liquid_grad_mid">#FFE3C4FF</color>
+    <color name="liquid_grad_end">#FFFFD2B0</color>
+    <color name="liquid_blob_a">#80FF8A1F</color>
+    <color name="liquid_blob_b">#804D9BFF</color>
+
+    <!-- Glass surfaces -->
+    <color name="glass_background">#26FFFFFF</color>
+    <color name="glass_panel">#66FFFFFF</color>
+    <color name="glass_panel_dark">#33FFFFFF</color>
+    <color name="glass_bar">#D9FFFFFF</color>
+    <color name="glass_stroke">#B3FFFFFF</color>
+    <color name="glass_divider">#1F000000</color>
+    <color name="glass_separator">#26000000</color>
+
+    <!-- Liquid glass surfaces (more transparent, brighter rim) -->
+    <color name="liquid_background">#14FFFFFF</color>
+    <color name="liquid_panel">#40FFFFFF</color>
+    <color name="liquid_panel_dark">#26FFFFFF</color>
+    <color name="liquid_bar">#A6FFFFFF</color>
+    <color name="liquid_stroke">#E6FFFFFF</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="glass_theme_title">Glass theme</string>
+    <string name="glass_theme_off">Off</string>
+    <string name="glass_theme_glass">Glass</string>
+    <string name="glass_theme_liquid">Liquid glass</string>
+
+    <string-array name="glass_theme_entries">
+        <item>@string/glass_theme_off</item>
+        <item>@string/glass_theme_glass</item>
+        <item>@string/glass_theme_liquid</item>
+    </string-array>
+    <string-array name="glass_theme_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

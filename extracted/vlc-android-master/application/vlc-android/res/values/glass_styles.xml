@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Optional Glass / Liquid glass theme overlays, applied at runtime from the "glass_theme" preference -->
+<resources>
+    <style name="ThemeOverlay.VLC.Glass">
+        <item name="background_default">@color/glass_background</item>
+        <item name="background_default_darker">@color/glass_panel_dark</item>
+        <item name="background_actionbar">@color/glass_bar</item>
+        <item name="header_background">@color/glass_bar</item>
+        <item name="audio_header_background">@color/glass_bar</item>
+        <item name="bottom_sheet_background">@color/glass_bar</item>
+        <item name="bookmark_background">@color/glass_bar</item>
+        <item name="swipe_refresh_background">@color/glass_bar</item>
+        <item name="colorSurface">@color/glass_bar</item>
+        <item name="card_background">@color/glass_panel</item>
+        <item name="card_border">@color/glass_stroke</item>
+        <item name="permission_explanation_background">@color/glass_panel</item>
+        <item name="empty_background">@color/glass_panel</item>
+        <item name="background_audio_tips">@color/glass_panel</item>
+        <item name="tips_item_background">@color/glass_panel</item>
+        <item name="default_separator">@color/glass_separator</item>
+        <item name="default_divider">@color/glass_divider</item>
+        <item name="audio_header_divider">@color/glass_divider</item>
+        <item name="bottom_navigation_background">@drawable/glass_bottom_bar</item>
+    </style>
+
+    <style name="ThemeOverlay.VLC.LiquidGlass" parent="ThemeOverlay.VLC.Glass">
+        <item name="background_default">@color/liquid_background</item>
+        <item name="background_default_darker">@color/liquid_panel_dark</item>
+        <item name="background_actionbar">@color/liquid_bar</item>
+        <item name="header_background">@color/liquid_bar</item>
+        <item name="audio_header_background">@color/liquid_bar</item>
+        <item name="bottom_sheet_background">@color/liquid_bar</item>
+        <item name="bookmark_background">@color/liquid_bar</item>
+        <item name="swipe_refresh_background">@color/liquid_bar</item>
+        <item name="colorSurface">@color/liquid_bar</item>
+        <item name="card_background">@color/liquid_panel</item>
+        <item name="card_border">@color/liquid_stroke</item>
+        <item name="permission_explanation_background">@color/liquid_panel</item>
+        <item name="empty_background">@color/liquid_panel</item>
+        <item name="background_audio_tips">@color/liquid_panel</item>
+        <item name="tips_item_background">@color/liquid_panel</item>
+        <item name="default_separator">@color/glass_separator</item>
+        <item name="default_divider">@color/glass_divider</item>
+        <item name="audio_header_divider">@color/glass_divider</item>
+        <item name="bottom_navigation_background">@drawable/liquid_bottom_bar</item>
+    </style>
+
+</resources>
