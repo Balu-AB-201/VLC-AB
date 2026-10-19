@@ -1,0 +1,47 @@
+name: Build VLC debug APK
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK components
+        run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: current
+
+      - name: Fetch libvlcjni source required by settings.gradle
+        working-directory: extracted/vlc-android-master
+        run: git clone --depth 1 --branch libvlcjni-3.x https://code.videolan.org/videolan/libvlcjni.git libvlcjni
+
+      - name: Build debug APK
+        working-directory: extracted/vlc-android-master
+        run: gradle :application:app:assembleDebug --no-daemon --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: vlc-debug-apk
+          path: extracted/vlc-android-master/application/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
